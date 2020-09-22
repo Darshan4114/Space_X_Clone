@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "ddin-b";
+  src: url(../font/D-DIN-Bold.otf);
+}
+@font-face {
+  font-family: "ddin";
+  src: url(../font/D-DIN.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  font-family: "ddin-b", Arial, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background: black;
+}
+
+h1 {
+  font: 34px/34px "ddin-b", Arial, Verdana, sans-serif;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font: 36px/38px "ddin-b", Arial, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font: 15px/20px "ddin", Arial, Verdana, sans-serif;
+}
+
+nav {
+  display: grid;
+  margin-top: 0.7rem;
+  grid-template-columns: 90% 10%;
+  grid-template-areas: "logo ham";
+  position: absolute;
+  width: 100vw;
+  z-index: 5;
+}
+
+.logo {
+  grid-area: logo;
+  width: 11rem;
+  margin-left: calc(50vw - 5.5rem);
+}
+
+.fill-white {
+  fill: white;
+}
+.ham {
+  grid-area: ham;
+}
+
+/* Panels */
+
+section.panel {
+  height: 100vh;
+  position: relative;
+}
+
+section.panel:nth-of-type(1) {
+  background: url(../img/starlink_11_dekstop.webp);
+  background-position: center;
+  background-size: cover;
+}
+section.panel:nth-of-type(2) {
+  background: url(../img/saocom1b_desktop.webp);
+  background-position: center;
+  background-size: cover;
+}
+section.panel:nth-of-type(3) {
+  background: url(../img/splashdown_1.webp);
+  background-position: center;
+  background-size: cover;
+}
+section.panel:nth-of-type(4) {
+  background: url(../img/starshipliftoff_desktop1.webp);
+  background-position: center;
+  background-size: cover;
+}
+section.panel:nth-of-type(5) {
+  background: url(../img/home_demo2.webp);
+  background-position: center;
+  background-size: cover;
+}
+section.panel:nth-of-type(6) .col-img {
+  text-align: center;
+}
+
+section.panel:nth-of-type(6) .col-img img {
+  margin: 1rem;
+  width: 90vw;
+}
+section.panel:nth-of-type(7) .col-img {
+  height: 70vh;
+  background: url(../img/home_moon.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text {
+  position: absolute;
+  bottom: 5rem;
+  left: 2rem;
+  max-width: 90vw;
+}
+section.panel div#text-right {
+  position: absolute;
+  bottom: 10rem;
+  right: 3rem;
+  text-align: right;
+}
+
+/* Buttons */
+
+a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid white;
+  padding: 1rem 3rem;
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+/* paragraphs */
+
+p {
+  font-family: "ddin", Arial, Verdana, sans-serif;
+  text-transform: none;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+section.panel:last-of-type {
+  height: 125vh;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+footer p a {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+}
+
+footer p span {
+  display: block;
+  color: #979797;
+}
